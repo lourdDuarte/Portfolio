@@ -1,0 +1,62 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block head_content %}
+<title>Skill</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block container %}
+<main>
+    <section class="skills" id="skill">
+        <div class="item-buttom">
+            <ul class="nav">
+                <li><a href="{% url "index" %}">Home</a></li>
+                <li><a href="{% url "proyect" %}">Proyect</a></li>
+                <li><a href="{% url "contact" %}">Contact</a></li>
+              </ul>
+          
+           
+        </div>
+        <div class="contenido-right">
+                <div class="inner">
+                    <clas class="contenido-min">
+                        <div class="inner-min">
+                            <p>Back-end</p>
+
+                        </div>
+                    </clas>
+
+                    <img src="{% static 'img/python.svg'%}" alt="python" class="class-skill">
+                    <img src="{% static 'img/django.svg'%}" alt="django" class="class-skill">
+                    <img src="{% static 'img/php.svg'%}" alt="php" class="class-skill">
+                    <img src="{% static 'img/js.svg'%}" alt="js" class="class-skill">
+                   
+                    <p class="p-data">Database</p>
+                    <img src="{% static 'img/mysql.svg'%}" alt="mysql" class="class-skill">
+                    <img src="{% static 'img/postgres.svg'%}" alt="postgres" class="class-skill">
+                </div>
+                <div class="inner">
+                    <clas class="contenido-min">
+                        <div class="inner-min">
+                            <p>Front-end</p>
+
+                        </div>
+                        
+                    </clas>
+                    <img src="{% static 'img/bootstrap.svg '%}" alt="bootstrap" class="class-skill">
+                    <img src="{% static 'img/html.svg '%}" alt="bootstrap" class="class-skill">
+                    <img src="{% static 'img/css.svg '%}" alt="bootstrap" class="class-skill">
+                    <h1 class="title-skill">SKILLS</h1>
+                </div>        
+        </div>
+    </section>
+
+</main>
+<div id='particles-js'></div>
+
+{% endblock %}
+
+

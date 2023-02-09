@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static%}
+{% block head_content %}
+<title>Proyect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block container %}
+<main>
+    <section class="proyect" id="proyect">
+      <div class="item-buttom">
+        <ul class="nav">
+          <li><a href="{% url "index" %}">Home</a></li>
+          <li><a href="{% url "skill" %}">Skill</a></li>
+          <li><a href="{% url "contact" %}">Contact</a></li>
+        </ul>
+  
+      </div>
+        
+
+        <div  class="contenido">
+            <div class="inner">
+                <h1 class="title-proyect">PROYECT</h1>
+            
+            </div>
+            <div class="inner">
+
+              <a href="https://github.com/lourdDuarte/Sistema-de-Gestion-Psichology">
+                <img class="img-proyect" src=" {% static 'img/psichology.png' %} "  alt="ps">
+                <div class="psi">
+                  <h1 class="title">PSICHOLOGY</h1>
+                  <img class="img-skill" src=" {% static 'img/php.svg' %} "  alt="ps">
+                  <img class="img-skill" src=" {% static 'img/jquery.svg' %} "  alt="ps">
+                  <img class="img-skill" src=" {% static 'img/mysql.svg' %} "  alt="ps">
+                  <img class="img-skill" src=" {% static 'img/chart.svg' %} "  alt="ps">
+                  <img class="img-skill" src=" {% static 'img/bootstrap.svg' %} "  alt="ps">
+                </div>
+              </a>
+
+                
+              <a href="https://github.com/lourdDuarte/program-license-Django">
+                <img class="img-proyect" src=" {% static 'img/license.png' %} "  alt="ps">
+                <div class="lic">
+                  <h1 class="title">LICENSE</h1>
+                  <img class="img-skill" src=" {% static 'img/python.svg' %} "  alt="ps">
+                  <img class="img-skill" src=" {% static 'img/django.svg' %} "  alt="ps">
+                  <img class="img-skill" src=" {% static 'img/bootstrap.svg' %} "  alt="ps">
+                  <img class="img-skill" src=" {% static 'img/css.svg' %} "  alt="ps">
+                  <img class="img-skill" src=" {% static 'img/html.svg' %} "  alt="ps">
+                </div>
+              </a>
+              
+              <a href="https://github.com/lourdDuarte/Agenda-en-Python---UTN">
+                <img class="img-proyect" src=" {% static 'img/agenda.png' %} "  alt="ps">
+                <div class="abm">
+                  <h1 class="title">ABM with socket</h1>
+                  <img class="img-skill" src=" {% static 'img/python.svg' %} "  alt="ps">
+                </div>
+              </div>
+ 
+            </div>
+            </div>
+
+             
+        </div>
+    </section>
+</main>   
+
+<div id='particles-js'></div> -->
+
+{% endblock %}
+

@@ -1,0 +1,52 @@
+
+{% extends "base.html" %}
+
+{% block head_content %}
+<title>Contact</title>
+{% endblock %}
+
+{% block container %}
+<main>
+    <section class="contact" id="contact">
+        <div class="item-buttom">
+          <ul class="nav">
+            <li><a href="{% url "index" %}">Home</a></li>
+            <li><a href="{% url "skill" %}">Skill</a></li>
+            <li><a href="{% url "proyect" %}">Proyect</a></li>
+          </ul>
+          </div>
+            
+        <div class="contenido-right">
+            <div class="inner">
+                <div class="formulario">
+                    <form action="">
+                        <input placeholder="Name">
+                        <input placeholder="Email">
+                        <input placeholder="Website">
+                        <textarea placeholder="Message"></textarea>
+                        <button class="cta">
+                            <span>SEND</span>
+                        </button>
+                    </form>
+
+                </div>
+                    
+            </div>
+            <div class="inner">
+                <h1 class="title-contact">CONTACT</h1>
+    
+            </div>
+                
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<div id='particles-js'></div>
+
+{% endblock %}
+
+
+
+

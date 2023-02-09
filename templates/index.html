@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head_content %}
+<title>Home</title>
+{% endblock %}
+
+{% block container %}
+<main>
+  <div class="item" id="inicio">
+    <ul class="nav">
+      <li><a href="{% url "skill" %}">Skills</a></li>
+      <li><a href="{% url "proyect" %}">Proyect</a></li>
+      <li><a href="{% url "contact" %}">Contact</a></li>
+    </ul>
+    </ul>
+
+  </div>
+  <section class="contenido" >
+      <div class="inner">
+          <div class="div-image">
+              <img src=" {% static 'img/index2.svg' %} "  alt="index"><br>
+              
+          </div>
+          
+      </div>
+      <div class="inner">
+          <div class="title">
+                <span class="typed"></span> 
+           </div>
+      </div>
+  </section>
+
+</main> 
+<div id='particles-js'></div> 
+{% endblock %}
