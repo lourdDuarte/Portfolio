@@ -1,6 +1,6 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'<h1>Welcome to my <br> portfolio</h1><br><button class="btn-cv">CV</i></i></i></button>'	
+		'<p class="p-type"> { Hi! i&apos;m Lourdes,</p><span class ="span-type"> Welcome to my portfolio } </span><br><button class="btn-type">VIEW CV</button><br>'	
 	],
 
 	typeSpeed: 200, // Velocidad en mlisegundos para poner una letra,
@@ -11,7 +11,7 @@ const typed = new Typed('.typed', {
 	backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
 	loop: true, // Repetir el array de strings
 	loopCount: 1, // Cantidad de veces a repetir el array.  false = infinite
-	showCursor: true, // Mostrar cursor palpitanto
+	showCursor: false, // Mostrar cursor palpitanto
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });

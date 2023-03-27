@@ -8,9 +8,9 @@
 <main>
   <div class="item" id="inicio">
     <ul class="nav">
-      <li><a href="{% url "skill" %}">Skills</a></li>
-      <li><a href="{% url "proyect" %}">Proyect</a></li>
-      <li><a href="{% url "contact" %}">Contact</a></li>
+      <li><a href="{% url "skill" %}"><p>01. <<span>SKILLS</span>></p></a></li>
+      <li><a href="{% url "proyect" %}"><p>02. <<span>PROYECT</span>></p></a></li>
+      <li><a href="{% url "contact" %}"><p>03. <<span>CONTACT</span>></p></a></li>
     </ul>
     </ul>
 
@@ -26,10 +26,18 @@
       <div class="inner">
           <div class="title">
                 <span class="typed"></span> 
-           </div>
+          </div>
+
       </div>
   </section>
-
+<p class="redes">
+        const<span class="redes-color"> &nbsp;redes</span>&nbsp;  = {
+          linkedin:  <i class="fa-brands fa-linkedin"></i> ,<br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          github: <i class="fa-brands fa-github"></i>
+        };
+</p>
 </main> 
 <div id='particles-js'></div> 
+
 {% endblock %}

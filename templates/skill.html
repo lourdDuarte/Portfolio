@@ -13,45 +13,50 @@
     <section class="skills" id="skill">
         <div class="item-buttom">
             <ul class="nav">
-                <li><a href="{% url "index" %}">Home</a></li>
-                <li><a href="{% url "proyect" %}">Proyect</a></li>
-                <li><a href="{% url "contact" %}">Contact</a></li>
-              </ul>
-          
-           
+                <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
+                <li><a href="{% url "proyect" %}"><p>01. <<span>PROYECT</span>></p></a></li>
+                <li><a href="{% url "contact" %}"><p>01. <<span>CONTACT</span>></p></a></li>
+              </ul>    
+        </div>
+        <div class="title-mod">
+            <p>def<span> &nbsp;SKILLS()</span>&nbsp;&nbsp;:</p>
+
         </div>
         <div class="contenido-right">
                 <div class="inner">
-                    <clas class="contenido-min">
+                    <div class="contenido-min">
                         <div class="inner-min">
-                            <p>Back-end</p>
+                            <p>backend&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
 
                         </div>
-                    </clas>
+                    </div>
 
                     <img src="{% static 'img/python.svg'%}" alt="python" class="class-skill">
-                    <img src="{% static 'img/django.svg'%}" alt="django" class="class-skill">
                     <img src="{% static 'img/php.svg'%}" alt="php" class="class-skill">
                     <img src="{% static 'img/js.svg'%}" alt="js" class="class-skill">
-                   
-                    <p class="p-data">Database</p>
-                    <img src="{% static 'img/mysql.svg'%}" alt="mysql" class="class-skill">
-                    <img src="{% static 'img/postgres.svg'%}" alt="postgres" class="class-skill">
+                   <p class="close">]<p/>
+                    <p class="p-data">database&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
+                    <img src="{% static 'img/sql.svg'%}" alt="sql" class="class-skill">
+                    <p class="close">]<p/>
                 </div>
                 <div class="inner">
-                    <clas class="contenido-min">
+                    <div class="contenido-min">
                         <div class="inner-min">
-                            <p>Front-end</p>
+                            <p>frontend&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
 
                         </div>
                         
-                    </clas>
+                    </div>
                     <img src="{% static 'img/bootstrap.svg '%}" alt="bootstrap" class="class-skill">
                     <img src="{% static 'img/html.svg '%}" alt="bootstrap" class="class-skill">
                     <img src="{% static 'img/css.svg '%}" alt="bootstrap" class="class-skill">
-                    <h1 class="title-skill">SKILLS</h1>
+                    <p class="close">]<p/>
+                    <p class="p-data">framework&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
+                    <img src="{% static 'img/django.svg'%}" alt="django" class="class-skill">
+                    <img src="{% static 'img/react.svg'%}" alt="django" class="class-skill">
+                    <p class="close">]<p/>
                 </div>        
-        </div>
+        </div> 
     </section>
 
 </main>

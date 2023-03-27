@@ -9,23 +9,26 @@
 
 {% block container %}
 <main>
-    <section class="proyect" id="proyect">
+<section class="proyect" id="proyect">
       <div class="item-buttom">
         <ul class="nav">
-          <li><a href="{% url "index" %}">Home</a></li>
-          <li><a href="{% url "skill" %}">Skill</a></li>
-          <li><a href="{% url "contact" %}">Contact</a></li>
+          <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
+          <li><a href="{% url "skill" %}"><p>01. <<span>SKILLS</span>></p></a></li>
+          <li><a href="{% url "contact" %}"><p>01. <<span>CONTACT</span>></p></a></li>
         </ul>
   
       </div>
         
-
-        <div  class="contenido">
-            <div class="inner">
-                <h1 class="title-proyect">PROYECT</h1>
-            
+      <div class="title-mod">
+        <p>def<span> &nbsp;PROYECT()</span>&nbsp;&nbsp;:</p>
+      </div>
+      <div  class="contenido">
+        <div class="contenido-min">
+            <div class="inner-min">
+                <p class="p-print">print&nbsp;&nbsp;( </p>
             </div>
-            <div class="inner">
+        </div>
+        <div class="inner">
 
               <a href="https://github.com/lourdDuarte/Sistema-de-Gestion-Psichology">
                 <img class="img-proyect" src=" {% static 'img/psichology.png' %} "  alt="ps">
@@ -59,16 +62,23 @@
                   <img class="img-skill" src=" {% static 'img/python.svg' %} "  alt="ps">
                 </div>
               </div>
- 
             </div>
-            </div>
-
-             
-        </div>
-    </section>
+            <p class="p-proyect">)</p>
+         </div>
+         
+    </div> 
+        
+</section>
+<p class="redes">
+  const<span class="redes-color"> &nbsp;redes</span>&nbsp;  = {
+    linkedin:  <i class="fa-brands fa-linkedin"></i> ,<br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    github: <i class="fa-brands fa-github"></i>
+  };
+</p>
 </main>   
 
-<div id='particles-js'></div> -->
+<div id='particles-js'></div> 
 
 {% endblock %}
 
