@@ -4,6 +4,11 @@
     top: 0;
 }
 
+.title-mod .span-contact{
+    color: #ffffff;
+    font-size: 25px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500&family=Roboto+Mono:ital,wght@1,300&family=Titillium+Web:wght@400;900&display=swap');
 *{
     font-family: 'Martian Mono', monospace;
@@ -513,16 +518,22 @@ p{
 form{
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
+    border: 1px solid #00d1c7;
     background-color: rgba(41, 37, 37, 0.15);
     backdrop-filter: blur(6px);
     padding-top: 5em;
     margin: 0 auto;
     width: 38em;
-    height: 28em;
+    height: 20em;
 
   }
 
+.formulario{
 
+    margin-left: 22em;
+
+
+}
 
 input, textarea{
     display: flex;
@@ -575,7 +586,7 @@ input:hover {
     left: 0;
     display: block;
     border-radius: 50px;
-    background: #2f3233;
+    background: #0d817b;
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
@@ -592,15 +603,16 @@ input:hover {
 
 .cta:hover:before {
     width: 100%;
-    background: #ccc234;
+    background: #05b7af;
 
 }
+
    
 
    
-   .cta:active {
+.cta:active {
     transform: scale(0.95);
-   }
+}
 .container p {
     font-size: 18px;
 }

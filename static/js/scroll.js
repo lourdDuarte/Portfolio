@@ -24,3 +24,9 @@ window.sr = ScrollReveal();
         distance:'400px',
     });
 
+    sr.reveal('.redes',{
+        duration: 2000,
+        origin: 'bottom',
+        distance:'400px',
+
+    });
