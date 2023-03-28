@@ -101,7 +101,7 @@ body{
 .contenido-min{
     display:flex;
     flex-wrap:wrap;
-    height: 150px;
+    height: 100px;
 }
 
 .contenido-right .inner p{
@@ -133,6 +133,11 @@ body{
     font-family: 'Titillium Web', sans-serif;
     font-size: 35px;
     color: #ffffff;
+}
+
+
+.p-data{
+    margin-top: 2em;
 }
 
 .inner-min .p-print{
