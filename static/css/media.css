@@ -41,6 +41,7 @@
         padding-left: 200px;
     }
 
+
     .p-data{
         padding-top:25px;
     }
@@ -166,3 +167,167 @@
   
 }
 
+/* ********MOBILE*********** */
+
+@media only screen and (max-width:480px){
+
+/* 
+********** INDEX ************ */
+    .contenido, .contenido-right{
+        width:100%;
+        height: 100px;
+    } 
+
+
+    .div-image,  .div-image img, .item, .item-buttom{
+        display: none;
+    }
+
+    .inner{
+        margin-top: -10em;
+        margin-bottom: 3em;
+        min-width:190px;
+        background: transparent;
+        padding:15px;
+    }
+    
+    .p-type{
+        font-size: 32px;
+        margin-top: 7em;
+    }
+    
+    .span-type{
+
+        font-size: 46px;
+    
+    }
+
+    .redes{
+        margin-top: 24em;
+        font-size: 20px;
+        margin-left: -1em;
+    }
+
+
+/* ********** END INDEX ************ */
+
+ /* ********** MENU MOBILE *********** */
+    .item-mobile{
+        display:flex;
+        text-align: center;
+        margin-top: 90px;
+        margin-left: 2em;
+    }
+
+    .nav-mobile{
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'Titillium Web', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      
+      .nav-mobile * {
+        box-sizing: border-box;
+        transition: all .5s ease;
+      }
+      
+      .nav-mobile li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: .2em 0em;
+        padding: 0;
+      }
+      
+      .nav-mobile span {
+        padding: .2em .4em;
+        color: rgb(255, 255, 255);
+        position: relative;
+        text-decoration: none;
+        font-size: 13px;
+      
+      }
+      
+      .nav-mobile span:hover {
+          border-bottom: 2px solid #2f3233;
+      }
+      
+      .nav-mobile p{
+          color:#00d1c7;
+          font-size: 13px;
+      }
+
+/* *************END MENU MOBILE************** */
+
+
+/* ************* SKILLS ***************** */
+
+
+      .skills, .proyect, .contact{
+        padding-top: 20px;
+        padding-left: 0px;
+        height: 10px;
+    }
+
+
+    
+    .contenido-right{
+        width:50px;
+        display:block;
+        flex-wrap:wrap;
+        height: 100px;
+    }
+
+    .contenido-min{
+        display: block;
+        height: 50px;
+
+    
+    }
+
+    .inner-min {
+        min-width:100px;
+    }
+    
+    .inner-min p, .p-data, .p-print{
+        font-size: 20px;
+    }
+
+    .inner-min p{
+        margin-top: 5em;
+    }
+
+    .class-skill{
+        width: 50px;
+        padding-right:8px;
+        padding-top: 0.8em;
+
+    }
+    
+    .title-mod .span-contact{
+        font-size: 18px;
+        
+    }
+    
+    .title-mod p{
+        font-size: 20px;
+        margin-left: 1em;
+        padding-bottom:5em ;
+    }
+
+    .title-mod span{
+
+        font-size: 35px;
+    }
+    
+    .close{
+        font-size: 20px;
+        margin-top: 0.5em;
+    }
+
+    .p-data{
+        margin-top: 0.8em;
+    }
+/************ END SKILLS **************/
+/* 
+********** PROYECT *************** */
+}

@@ -63,7 +63,9 @@
 
 
 }
-
+.item-mobile{
+    display: none;
+}
 .btn-type:hover{
     background: #05B7AF;
     color: #000;
