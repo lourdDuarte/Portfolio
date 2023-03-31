@@ -6,27 +6,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+<button class="open-nav"><i class="fa-solid fa-bars" style="color: #00d1c7;"></i></button>
+<nav class="nav">
+    <ul class="nav-list">
+        <li><a href="{% url "index" %}"><p>01.<<span>HOME</span>></p></a></li>
+        <li><a href="{% url "proyect" %}"><p>02.<<span>PROYECT</span>></p></a></li>
+        <li><a href="{% url "contact" %}"><p>03.<<span>CONTACT</span>></p></a></li>
+    </ul>
+    </ul>
+
+</nav>
 {% endblock %}
 
 {% block container %}
 <main>
     <section class="skills" id="skill">
-        <div class="item-buttom">
-            <ul class="nav">
-                <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
-                <li><a href="{% url "proyect" %}"><p>02. <<span>PROYECT</span>></p></a></li>
-                <li><a href="{% url "contact" %}"><p>03. <<span>CONTACT</span>></p></a></li>
-              </ul>    
-        </div>
-        <div class="item-mobile" id="inicio">
-            <ul class="nav-mobile">
-                <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
-                <li><a href="{% url "proyect" %}"><p>02. <<span>PROYECT</span>></p></a></li>
-                <li><a href="{% url "contact" %}"><p>03. <<span>CONTACT</span>></p></a></li>
-            </ul>
-            </ul>
         
-          </div>
         <div class="title-mod">
             <p>def<span> &nbsp;SKILLS()</span>&nbsp;&nbsp;:</p>
 

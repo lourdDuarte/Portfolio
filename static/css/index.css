@@ -425,28 +425,46 @@ p{
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Titillium+Web:wght@400;900&display=swap');
-.nav {
+
+.open-nav{
+    background: transparent;
+    border-radius: 0;
+    border-color: transparent;
+    display: none;
+}
+
+.open-nav i{
+    font-size: 20px;
+}
+
+.nav{
+    padding-top: 3em;
+    margin-bottom: 1em;
+    padding-left: 40em;
+}
+
+
+.nav-list {
   font-family: 'Roboto Mono', monospace;
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
-  text-align: center;
+  display: flex;
   font-weight: 600;
-  margin-left: -20em;
+  gap: 1rem;
+  list-style-type: none;
 }
 
-.nav * {
+.nav-list * {
   box-sizing: border-box;
   transition: all .35s ease;
 }
 
-.nav li {
-  display: inline-block;
-  list-style: outside none none;
-  margin: .5em 1em;
-  padding: 0;
+.nav-list li a{
+  text-decoration: none;
+  
 }
 
-.nav span {
+.nav-list span {
   padding: .5em .8em;
   color: rgb(255, 255, 255);
   position: relative;
@@ -455,21 +473,15 @@ p{
 
 }
 
-.nav span:hover {
+.nav-list span:hover {
     border-bottom: 2px solid #2f3233;
 }
 
-.nav p{
+.nav-list p{
     color:#00d1c7;
 
 }
 
-.item-buttom{
-    margin-left: 5em; 
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 1em;
-}
 
 .item-buttom-proyect{
     margin-left: 1em; 

@@ -5,19 +5,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+
+<nav class="nav">
+  <ul class="nav-list">
+    <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
+    <li><a href="{% url "skill" %}"><p>02. <<span>SKILLS</span>></p></a></li>
+    <li><a href="{% url "contact" %}"><p>03. <<span>CONTACT</span>></p></a></li>
+  </ul>
+  </ul>
+
+</nav>
+
 {% endblock %}
 
 {% block container %}
 <main>
 <section class="proyect" id="proyect">
-      <div class="item-buttom">
-        <ul class="nav">
-          <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
-          <li><a href="{% url "skill" %}"><p>02. <<span>SKILLS</span>></p></a></li>
-          <li><a href="{% url "contact" %}"><p>03. <<span>CONTACT</span>></p></a></li>
-        </ul>
-  
-      </div>
         
       <div class="title-mod">
         <p>def<span> &nbsp;PROYECT()</span>&nbsp;&nbsp;:</p>
