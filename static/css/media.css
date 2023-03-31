@@ -212,49 +212,29 @@
 /* ********** END INDEX ************ */
 
  /* ********** MENU MOBILE *********** */
-    .item-mobile{
-        display:flex;
-        text-align: center;
-        margin-top: 90px;
-        margin-left: 2em;
-    }
 
-    .nav-mobile{
-        font-family: 'Roboto Mono', monospace;
-        font-family: 'Titillium Web', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-      }
-      
-      .nav-mobile * {
-        box-sizing: border-box;
-        transition: all .5s ease;
-      }
-      
-      .nav-mobile li {
-        display: inline-block;
-        list-style: outside none none;
-        margin: .2em 0em;
-        padding: 0;
-      }
-      
-      .nav-mobile span {
-        padding: .2em .4em;
-        color: rgb(255, 255, 255);
-        position: relative;
-        text-decoration: none;
-        font-size: 13px;
-      
-      }
-      
-      .nav-mobile span:hover {
-          border-bottom: 2px solid #2f3233;
-      }
-      
-      .nav-mobile p{
-          color:#00d1c7;
-          font-size: 13px;
-      }
+.open-nav{
+    display: block;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(41, 37, 37, 0.15);
+    backdrop-filter: blur(10px);;
+    bottom: 0;
+    padding: 1rem;
+    z-index: 1;
+    box-shadow: #db0000;
+
+}
+
+.nav-list{
+    flex-direction: column;
+    align-items: end;
+
+}
 
 /* *************END MENU MOBILE************** */
 
@@ -330,4 +310,16 @@
 /************ END SKILLS **************/
 /* 
 ********** PROYECT *************** */
+
+.img-proyect{
+    width: 250px;
+    margin-bottom: 4em;
+    margin-top: 1.5em; 
+    margin-left: 0em;
+}
+
+.proyect{
+    height: 150px;
+}
+
 }

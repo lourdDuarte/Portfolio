@@ -3,18 +3,20 @@
 
 {% block head_content %}
 <title>Contact</title>
+<nav class="nav">
+  <ul class="nav-list">
+    <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
+    <li><a href="{% url "skill" %}"><p>02. <<span>SKILLS</span>></p></a></li>
+    <li><a href="{% url "proyect" %}"><p>03. <<span>PROYECT</span>></p></a></li>
+  </ul>
+  </ul>
+
+</nav>
 {% endblock %}
 
 {% block container %}
 <main>
     <section class="contact" id="contact">
-        <div class="item-buttom">
-          <ul class="nav">
-            <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
-            <li><a href="{% url "skill" %}"><p>02. <<span>SKILLS</span>></p></a></li>
-            <li><a href="{% url "proyect" %}"><p>03. <<span>PROYECT</span>></p></a></li>
-          </ul>
-          </div>
           <div class="title-mod">
             <p>def<span> &nbsp;CONTACT(<span class="span-contact">name, email, website, message</span>)</span>&nbsp;&nbsp;:</p>
           </div>
