@@ -1,30 +1,32 @@
 {% extends "base.html" %}
 {% load static %}
-{% block head_content %}
-<title>Home</title>
-<nav class="nav">
-  <ul class="nav-list">
-    <li><a href="{% url "skill" %}"><p>01. <<span>SKILLS</span>></p></a></li>
-    <li><a href="{% url "proyect" %}"><p>02. <<span>PROYECT</span>></p></a></li>
-    <li><a href="{% url "contact" %}"><p>03. <<span>CONTACT</span>></p></a></li>
-  </ul>
-  </ul>
 
-</nav>
+{% block head_content %}
+
+<title>Home</title>
+<button id="abrir" class="abrir-menu"><i class="fa fa-list" aria-hidden="true" style="color:#fff"></i></button>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li><a href="{% url "skill" %}"><p>01. <<span>SKILLS</span>></p></a></li>
+              <li><a href="{% url "proyect" %}"><p>02. <<span>PROJECT</span>></p></a></li>
+            </ul>
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x" style="color:#fff"></i>CERRAR</button>
+        </nav>
+
 {% endblock %}
 
 {% block container %}
 <main>
   <section class="contenido" >
       <div class="inner">
-          <div class="div-image">
+          <div class="div-image" >
               <img src=" {% static 'img/index2.svg' %} "  alt="index"><br>
               
           </div>
           
       </div>
       <div class="inner">
-          <div class="title">
+          <div class="title-typed">
                 <span class="typed"></span> 
           </div>
 
@@ -36,8 +38,25 @@
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           github: <i class="fa-brands fa-github"></i>
         };
-</p>
+</p> 
 </main> 
 <div id='particles-js'></div> 
+<script>
+  const nav = document.querySelector("#nav");
+  const abrir = document.querySelector("#abrir");
+  const cerrar = document.querySelector("#cerrar");
+
+
+  abrir.addEventListener("click", () => {
+      nav.classList.add("visible");
+
+  })
+
+  cerrar.addEventListener("click", () => {
+      nav.classList.remove("visible");
+
+
+})
+</script>
 
 {% endblock %}
