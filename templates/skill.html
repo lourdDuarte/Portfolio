@@ -6,47 +6,46 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
-<button class="open-nav"><i class="fa-solid fa-bars" style="color: #00d1c7;"></i></button>
-<nav class="nav">
-    <ul class="nav-list">
-        <li><a href="{% url "index" %}"><p>01.<<span>HOME</span>></p></a></li>
-        <li><a href="{% url "proyect" %}"><p>02.<<span>PROYECT</span>></p></a></li>
-        <li><a href="{% url "contact" %}"><p>03.<<span>CONTACT</span>></p></a></li>
-    </ul>
-    </ul>
-
-</nav>
+<button id="abrir" class="abrir-menu"><i class="fa fa-list" aria-hidden="true" style="color:#fff"></i></button>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li><a href="{% url "index" %}"><p>01.<<span>HOME</span>></p></a></li>
+              <li><a href="{% url "proyect" %}"><p>02.<<span>PROJECT</span>></p></a></li>
+            </ul>
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x" style="color:#fff"></i>CERRAR</button>
+        </nav>
 {% endblock %}
 
 {% block container %}
 <main>
-    <section class="skills" id="skill">
+    <section class="skills">
         
         <div class="title-mod">
-            <p>def<span> &nbsp;SKILLS()</span>&nbsp;&nbsp;:</p>
+            <p>def<span>SKILLS()</span>&nbsp;&nbsp;:</p>
 
         </div>
         <div class="contenido-right">
                 <div class="inner">
-                    <div class="contenido-min">
+                    <div class="content-inner">
                         <div class="inner-min">
                             <p>backend&nbsp;&nbsp;=&nbsp;&nbsp;[</p>
                         </div>
+                            <img src="{% static 'img/python.svg'%}" alt="python" class="class-skill">
+                            <img src="{% static 'img/php.svg'%}" alt="php" class="class-skill">
+                            <img src="{% static 'img/js.svg'%}" alt="js" class="class-skill">
+                        <p class="close">]</p>
+                            <p class="p-data">database&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
+                            <img src="{% static 'img/sql.svg'%}" alt="sql" class="class-skill">
+                            <p class="close">]</p>
                     </div>
-                    <img src="{% static 'img/python.svg'%}" alt="python" class="class-skill">
-                    <img src="{% static 'img/php.svg'%}" alt="php" class="class-skill">
-                    <img src="{% static 'img/js.svg'%}" alt="js" class="class-skill">
-                   <p class="close">]</p>
-                    <p class="p-data">database&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
-                    <img src="{% static 'img/sql.svg'%}" alt="sql" class="class-skill">
-                    <p class="close">]</p>
+
+
                 </div>
                 <div class="inner">
-                    <div class="contenido-min">
+                    <div class="content-inner-fr">
                         <div class="inner-min">
                             <p>frontend&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
                         </div>
-                    </div>
                     <img src="{% static 'img/bootstrap.svg '%}" alt="bootstrap" class="class-skill">
                     <img src="{% static 'img/html.svg '%}" alt="bootstrap" class="class-skill">
                     <img src="{% static 'img/css.svg '%}" alt="bootstrap" class="class-skill">
@@ -57,10 +56,37 @@
                     <p class="close">]</p>
                 </div>        
         </div> 
-    </section>
+</section>
+    <div class="footer-hz">
+    <p class="redes">
+        const<span class="redes-color"> &nbsp;redes</span>&nbsp;  = {
+          linkedin:  <i class="fa-brands fa-linkedin"></i> ,<br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          github: <i class="fa-brands fa-github"></i>
+        };
+    </p> 
+    </div>
 
-</main>
-<div id='particles-js'></div>
+</main> 
+<div id='particles-js'></div> 
+<script>
+  const nav = document.querySelector("#nav");
+  const abrir = document.querySelector("#abrir");
+  const cerrar = document.querySelector("#cerrar");
+
+
+  abrir.addEventListener("click", () => {
+      nav.classList.add("visible");
+
+  })
+
+  cerrar.addEventListener("click", () => {
+      nav.classList.remove("visible");
+
+
+})
+
+</script>
 
 {% endblock %}
 

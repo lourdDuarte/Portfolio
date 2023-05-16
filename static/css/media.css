@@ -1,325 +1,203 @@
-
-@media only screen and (max-width : 1400px) {
-    .item{
-        margin-left: 28em;
-        text-align: center;
-        padding-top: 30px;
-    }
-
-    button{
-        width: 149px;
-        height: 60px;
-        margin-right: 150px;
-    }
-
-    .div-image img{
-        width: 430px;
-        padding-top: 100px;
-        padding-left: 200px;
-    
-    }
+@media only screen and (max-width : 767px) {
 
 
-    h1{
-        font-size: 40px;
-        padding-top: 150px;
-        padding-right: 200px;
-    }
-
-    .btn-cv{
-        margin-left: 8em;
-        margin-top: 2em;
-    }
-
-    .item-buttom{
-        margin-left: 10em; 
-        padding-top: 20px;
-        padding-bottom: 3em;
-    }
-
-    .skills, .proyect{
-        padding-left: 200px;
-    }
-
-
-    .p-data{
-        padding-top:25px;
-    }
-    .class-skill{
-        width: 80px;
-        padding-right:40px;
-        margin-top: -2em;
-        transition: width 1s, height 2s;
-
-    }
-
-    .class-skill:hover{
-        width: 100px;
-    }
-
-    .title-skill{
-        padding-top: 60px;
-        font-size: 60px;
-    }
-    .title-proyect{
-
-        margin-left: 2em;
-        font-size: 55px;
-    }
-
-    .img-proyect{
-        width: 310px;
-    }
-
-    .img-proyect:hover{
-        width: 290px;
-
-    
-    }
-
-    .psi, .lic, .abm{
-
-        margin-left: 1em;
-        width:260px;
-
-    }
-
-    .img-skill{
-        width: 32px; 
-
-    }
-
-    .lic{
-        top: 200px;
-    }
-    
-    .abm{
-        top:370px;
-    } */
-
-    .porcent-back, .porcent-front{
-        width:15px;
-        height: 35px;
-    }
-
-    .porcent-back:hover{
-
-        width:13em;
-
- 
-    }
-    
-    .porcent-front:hover{
-        width:6em;
-    }
-
-    .card {
-        width: 25em;
-        height: 7em;
-        margin-bottom: 30px;
-        background: #1b1919;
-      }
-    .img-min{
-        width: 40px;
-
-    }
-      
-    .container {
-        padding: 0px 16px;
-      }
-
-    form{
-        width: 32em;
-        height: 24em;
-        margin-left: -7em;
-        padding-top: 2em;
-    }
-
-    .title-contact{
-        font-size: 55px;
-        margin-left: -1em;
-    }
-
-    input, textarea{
-        width: 24em;
-        margin-left: 5em;
-    }
-
-    .cta{
-        margin-left: 13em;
-    }
-
-    .cta:before {
-        width: 35px;
-        height: 35px;
-    }
-
-    .cta:hover:before {
-        width: 7em;
-
-    }
-
-    .cta span{
-        font-size: 15px;
-        top: -1em;
-        left: -2em;
-    }
-  
-}
-
-/* ********MOBILE*********** */
-
-@media only screen and (max-width:480px){
-
-/* 
-********** INDEX ************ */
-    .contenido, .contenido-right{
+    .contenido{
         width:100%;
-        height: 100px;
-    } 
-
-
-    .div-image,  .div-image img, .item, .item-buttom{
-        display: none;
+        display:flex;
+        flex-wrap:nowrap;
+        height: 30px;
+    
     }
 
     .inner{
-        margin-top: -10em;
-        margin-bottom: 3em;
-        min-width:190px;
-        background: transparent;
-        padding:15px;
-    }
-    
-    .p-type{
-        font-size: 32px;
-        margin-top: 7em;
-    }
-    
-    .span-type{
-
-        font-size: 46px;
-    
-    }
-
-    .redes{
-        margin-top: 24em;
-        font-size: 20px;
-        margin-left: -1em;
-    }
-
-
-/* ********** END INDEX ************ */
-
- /* ********** MENU MOBILE *********** */
-
-.open-nav{
-    display: block;
-}
-
-.nav{
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(41, 37, 37, 0.15);
-    backdrop-filter: blur(10px);;
-    bottom: 0;
-    padding: 1rem;
-    z-index: 1;
-    box-shadow: #db0000;
-
-}
-
-.nav-list{
-    flex-direction: column;
-    align-items: end;
-
-}
-
-/* *************END MENU MOBILE************** */
-
-
-/* ************* SKILLS ***************** */
-
-
-      .skills, .proyect, .contact{
-        padding-top: 20px;
-        padding-left: 0px;
-        height: 10px;
-    }
-
-
-    
-    .contenido-right{
-        width:50px;
-        display:block;
-        flex-wrap:wrap;
-        height: 100px;
-    }
-
-    .contenido-min{
-        display: block;
-        height: 50px;
-
-    
-    }
-
-    .inner-min {
+        margin:4px;
+        flex:1;
         min-width:100px;
-    }
-    
-    .inner-min p, .p-data, .p-print{
-        font-size: 20px;
+        background: transparent;
+        padding:0px;
     }
 
-    .inner-min p{
+   
+/* ********* INDEX ********* */
+    .div-image img{
+        width: 300px;
+        padding-top: 0px;
         margin-top: 5em;
-    }
-
-    .class-skill{
-        width: 50px;
-        padding-right:8px;
-        padding-top: 0.8em;
-
-    }
+        padding-left: 15px;
     
-    .title-mod .span-contact{
+    }
+
+    .title-typed{
+        position: absolute;
+        top: 20em;
+        left: 1em;
+    
+    }
+
+    .p-type{
+        color: #fafafa;
+        font-size: 28px;
+    }
+
+    .span-type{
+        color: #00d1c7;
+        font-size: 32px;
+    
+    }
+/* 
+********** FOOTER ******    */
+    .redes{
+        color:#ffffff;
+        text-align: center;
+        margin-top: 38em;
         font-size: 18px;
+
+    }
+
+    .redes-color{
+       font-size: 18px;
+    }
+
+/******** MENU ********/
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+        margin-top: 1em;
+        margin-left: 16em;
         
+
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+        margin-top: 1em;
+        font-size: 15px;
     }
     
-    .title-mod p{
-        font-size: 20px;
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 0rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(26, 24, 24, 0.15);
+        backdrop-filter: blur(10px);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 1;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        font-weight: 10;
+        margin-top: 1em;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    .nav-list span {
+        padding: 0em .0em;
+        font-size: 18px;
+      
+    }
+
+    .nav-list p{
+        font-size:18px;
+        margin-bottom: -2em;
+    }
+
+
+    /* ********SKILLS**** */
+    .title-mod{
         margin-left: 1em;
-        padding-bottom:5em ;
+        display: flex ;
     }
 
     .title-mod span{
-
-        font-size: 35px;
+        font-size: 30px;
+        margin-left: 10px;
     }
+
+    .title-mod p{
+        font-size: 25px;
+        margin-right: 2em;
+    }
+
+    .skills{
+        padding-left: 0px;
+        display: block;
+        height: 30px;
+        width: 100%;
+        flex-wrap:nowrap;
+    }
+
+
+    .content-inner, .content-inner-fr{
+    position: absolute;
+    display: block;
+    left: 1em;
+}
+
+    .content-inner-fr{
+        left: 1em;
+        top: 11em;
+    }
+
     
-    .close{
-        font-size: 20px;
-        margin-top: 0.5em;
+    .inner-min p{
+        font-size: 25px;
+        display: block;
+
     }
 
     .p-data{
-        margin-top: 0.8em;
+        font-size: 25px;
+        margin-top: 8em;
     }
-/************ END SKILLS **************/
-/* 
-********** PROYECT *************** */
+    .class-skill{
+    width: 35px;
+    padding-right:10px;
+   
+    margin-top: -33em;
+    }
 
-.img-proyect{
-    width: 250px;
-    margin-bottom: 4em;
-    margin-top: 1.5em; 
-    margin-left: 0em;
-}
+    .class-skill:hover{
+        width: 38px;
+    }
 
-.proyect{
-    height: 150px;
-}
+    .close{
+        margin-bottom: 2em;
+        font-size: 25px;
+    }
 
+    .footer-hz{
+        writing-mode: vertical-lr;
+        margin-left: 18em;
+        margin-top: -30em;
+      
+    }
+
+    
 }

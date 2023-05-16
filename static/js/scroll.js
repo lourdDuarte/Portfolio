@@ -30,3 +30,19 @@ window.sr = ScrollReveal();
         distance:'400px',
 
     });
+
+    sr.reveal('.footer-hz',{
+        duration: 2000,
+        origin: 'bottom',
+        distance:'400px',
+
+    });
+
+    sr.reveal('.effect',{
+        duration: 2000,
+        origin: 'top',
+        distance:'400px',
+
+    });
+
+   

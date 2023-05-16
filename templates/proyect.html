@@ -5,16 +5,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
-
-<nav class="nav">
-  <ul class="nav-list">
-    <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
-    <li><a href="{% url "skill" %}"><p>02. <<span>SKILLS</span>></p></a></li>
-    <li><a href="{% url "contact" %}"><p>03. <<span>CONTACT</span>></p></a></li>
-  </ul>
-  </ul>
-
-</nav>
+<button id="abrir" class="abrir-menu"><i class="fa fa-list" aria-hidden="true" style="color:#fff"></i></button>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+              <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
+              <li><a href="{% url "skill" %}"><p>02. <<span>SKILLS</span>></p></a></li>
+            </ul>
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x" style="color:#fff"></i>CERRAR</button>
+        </nav>
 
 {% endblock %}
 
@@ -23,54 +21,59 @@
 <section class="proyect" id="proyect">
         
       <div class="title-mod">
-        <p>def<span> &nbsp;PROYECT()</span>&nbsp;&nbsp;:</p>
+        <p>def<span> &nbsp;PROJECT()</span>&nbsp;&nbsp;:</p>
       </div>
-      <div  class="contenido">
-        <div class="contenido-min">
-            <div class="inner-min">
-                <p class="p-print">print&nbsp;&nbsp;( </p>
-            </div>
-        </div>
         <div class="inner">
-
-              <a href="https://github.com/lourdDuarte/Sistema-de-Gestion-Psichology">
-                <img class="img-proyect" src=" {% static 'img/psichology.png' %} "  alt="ps">
-                <div class="psi">
-                  <h1 class="title">PSICHOLOGY</h1>
-                  <img class="img-skill" src=" {% static 'img/php.svg' %} "  alt="ps">
-                  <img class="img-skill" src=" {% static 'img/jquery.svg' %} "  alt="ps">
-                  <img class="img-skill" src=" {% static 'img/mysql.svg' %} "  alt="ps">
-                  <img class="img-skill" src=" {% static 'img/chart.svg' %} "  alt="ps">
-                  <img class="img-skill" src=" {% static 'img/bootstrap.svg' %} "  alt="ps">
+              <div class="effect">
+                <div class="card">
+                  <div class="card-body">
+                    <img class="img-proyect" src=" {% static 'img/psichology.png' %} "  alt="ps">
+                    <h1 class="title">PSICHOLOGY</h1>
+                    <img class="img-skill" src=" {% static 'img/php.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/jquery.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/mysql.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/chart.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/bootstrap.svg' %} "  alt="ps">
+                  </div>
                 </div>
-              </a>
-
-                
-              <a href="https://github.com/lourdDuarte/program-license-Django">
-                <img class="img-proyect" src=" {% static 'img/license.png' %} "  alt="ps">
-                <div class="lic">
-                  <h1 class="title">LICENSE</h1>
-                  <img class="img-skill" src=" {% static 'img/python.svg' %} "  alt="ps">
-                  <img class="img-skill" src=" {% static 'img/django.svg' %} "  alt="ps">
-                  <img class="img-skill" src=" {% static 'img/bootstrap.svg' %} "  alt="ps">
-                  <img class="img-skill" src=" {% static 'img/css.svg' %} "  alt="ps">
-                  <img class="img-skill" src=" {% static 'img/html.svg' %} "  alt="ps">
+                <div class="card">
+                  <div class="card-body">
+                    <img class="img-proyect" src=" {% static 'img/license2.png' %} "  alt="ps">
+                    <h1 class="title">LICENSE</h1>
+                    <img class="img-skill" src=" {% static 'img/python.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/django.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/bootstrap.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/css.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/html.svg' %} "  alt="ps">
+                  </div>
+                  
                 </div>
-              </a>
-              
-              <a href="https://github.com/lourdDuarte/Agenda-en-Python---UTN">
-                <img class="img-proyect" src=" {% static 'img/agenda.png' %} "  alt="ps">
-                <div class="abm">
-                  <h1 class="title">ABM with socket</h1>
-                  <img class="img-skill" src=" {% static 'img/python.svg' %} "  alt="ps">
+                <div class="card">
+                  <div class="card-body">
+                    <img class="img-proyect" src=" {% static 'img/agenda2.png' %} "  alt="ps">
+                    <h1 class="title">AGENDA</h1>
+                    <img class="img-skill" src=" {% static 'img/python.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/mysql.svg' %} "  alt="ps">
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <img class="img-proyect" src=" {% static 'img/encriptador.png' %} "  alt="ps">
+                    <h1 class="title">ENCRIPTADOR</h1>
+                    <img class="img-skill" src=" {% static 'img/css.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/html.svg' %} "  alt="ps">
+                    <img class="img-skill" src=" {% static 'img/js.svg' %} "  alt="ps">
+                  </div>
                 </div>
               </div>
-            </div>
-            <p class="p-proyect">)</p>
+              
+                
+        
+            
          </div>
          
-    </div> 
-        
+ 
+    
 </section>
 <p class="redes">
   const<span class="redes-color"> &nbsp;redes</span>&nbsp;  = {
@@ -78,9 +81,26 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     github: <i class="fa-brands fa-github"></i>
   };
-</p>
+</p>    
 </main>   
+<script>
+  const nav = document.querySelector("#nav");
+  const abrir = document.querySelector("#abrir");
+  const cerrar = document.querySelector("#cerrar");
 
+
+  abrir.addEventListener("click", () => {
+      nav.classList.add("visible");
+
+  })
+
+  cerrar.addEventListener("click", () => {
+      nav.classList.remove("visible");
+
+
+})
+
+</script>
 <div id='particles-js'></div> 
 
 {% endblock %}

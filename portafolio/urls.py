@@ -24,6 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index, name='index'),
     path('skill/',views.skill, name='skill'),
-    path('contact/',views.contact, name='contact'),
     path('proyect/',views.proyect, name='proyect'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
