@@ -36,12 +36,12 @@
 
     .p-type{
         color: #fafafa;
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .span-type{
         color: #00d1c7;
-        font-size: 32px;
+        font-size: 25px;
     
     }
 /* 
@@ -153,16 +153,15 @@
         flex-wrap:nowrap;
     }
 
-
     .content-inner, .content-inner-fr{
-    position: absolute;
-    display: block;
-    left: 1em;
-}
-
+        position: absolute;
+        display: block;
+        left: 3em;
+        top: 8em;
+    }
+    
     .content-inner-fr{
-        left: 1em;
-        top: 11em;
+        top: 18em;
     }
 
     
@@ -192,12 +191,145 @@
         font-size: 25px;
     }
 
+/******** PROYECT *********** */
+    .proyect{
+        padding-top: 2em;
+        padding-left: 0px;
+        width:100%;
+        display:flex;
+        flex-wrap:nowrap;
+        height: 30px;
+    }
+
+    .effect{
+        margin-top: 2em;
+    }
+
+    .card {
+        width: 24em;
+        height: 13em;
+        font-size: 13px;
+        padding-top: 5px;
+        margin-left: -22em;
+        margin-bottom: 2em;
+        display: block;
+
+    
+      }
+     
+    
+      .card:hover {
+        box-shadow: none;
+        width: 24em;
+        height: 13em;
+    
+      }
+    
+      .card:hover .img-proyect{
+        width: 20em;
+        height: 8em;
+        margin-left: 18px;
+    
+      }
+    
+      .card:hover .title{
+        width:0%;
+        font-size: 15px;
+        margin-top: 10em;
+        margin-left: 0px;
+        padding: 0px 0px 0px 0px;
+      }
+    
+
+      .card:hover .img-skill{
+        opacity: 1;
+    
+      } 
+    
+    
+      .card-body{
+        width: 23em;
+        height: 14em;
+        margin: 0 auto;
+    
+      }
+
+      .img-proyect{
+        width: 20em;
+        height: 8em;
+        margin-bottom: 5em;
+        margin-left: 18px;
+        transition: all .3s ease;
+       
+    
+    }
+
+    .img-skill{
+        width: 2em;
+        margin-left: 0em;
+        opacity: 1;
+    }
+
+    .div-skill{
+        position: absolute;
+        top: 12em;
+        left: 1.5em;
+        height: 5em;
+    }
+
+    .title{
+        width:0%;
+        font-size: 15px;
+        margin-top: 10em;
+        opacity: 1;
+        padding: 0px 0px 0px 0px;
+    }
+    
+  
+    
     .footer-hz{
         writing-mode: vertical-lr;
-        margin-left: 18em;
+        margin-left: 22em;
         margin-top: -30em;
       
     }
 
     
+}
+
+@media only screen and (max-width : 1370px)  {
+    
+    .nav{
+        padding-left: 30em;
+    }
+/* ****** INDEX ****** */
+
+    .contenido{
+    width:100%;
+    display:flex;
+    flex-wrap:nowrap;
+    height: 420px;
+
+    }
+    .title-typed{
+        top: 3em;
+        left: 40em;
+    }
+    .p-type{
+        font-size: 35px;
+        margin-top: 1em;
+    }
+
+    .span-type{
+        font-size: 42px;
+      
+    }
+    .div-image img{
+        width: 400px;
+        padding-left: 15vh;
+        padding-top: 60px;
+    
+    }
+/* ****** FIN INDEX ****** */
+
 }

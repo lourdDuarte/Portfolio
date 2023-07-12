@@ -1,107 +1,147 @@
-{% extends "base.html" %}
-{% load static%}
-{% block head_content %}
-<title>Proyect</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
-<button id="abrir" class="abrir-menu"><i class="fa fa-list" aria-hidden="true" style="color:#fff"></i></button>
-        <nav class="nav" id="nav">
-            <ul class="nav-list">
-              <li><a href="{% url "index" %}"><p>01. <<span>HOME</span>></p></a></li>
-              <li><a href="{% url "skill" %}"><p>02. <<span>SKILLS</span>></p></a></li>
-            </ul>
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x" style="color:#fff"></i>CERRAR</button>
-        </nav>
-
-{% endblock %}
-
-{% block container %}
-<main>
-<section class="proyect" id="proyect">
-        
-      <div class="title-mod">
-        <p>def<span> &nbsp;PROJECT()</span>&nbsp;&nbsp;:</p>
-      </div>
-        <div class="inner">
-              <div class="effect">
-                <div class="card">
-                  <div class="card-body">
-                    <img class="img-proyect" src=" {% static 'img/psichology.png' %} "  alt="ps">
-                    <h1 class="title">PSICHOLOGY</h1>
-                    <img class="img-skill" src=" {% static 'img/php.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/jquery.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/mysql.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/chart.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/bootstrap.svg' %} "  alt="ps">
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <img class="img-proyect" src=" {% static 'img/license2.png' %} "  alt="ps">
-                    <h1 class="title">LICENSE</h1>
-                    <img class="img-skill" src=" {% static 'img/python.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/django.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/bootstrap.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/css.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/html.svg' %} "  alt="ps">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous" />
+  <link href="../static/css/style.css" rel="stylesheet" type="text/css">
+  <link href="../static/css/index.css " rel="stylesheet" type="text/css">
+  <link href="../static/css/media.css " rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,600&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,600;1,800&family=Unbounded:wght@200&family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
+  <title>Document</title>
+</head>
+<body>
+  <button id="abrir" class="abrir-menu"><i class="fa fa-list" aria-hidden="true" style="color:#fff"></i></button>
+  <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a href="index.html"><p>01. <<span>HOME</span>></p></a></li>
+        <li><a href="skill.html"><p>02. <<span>SKILLS</span>></p></a></li>
+      </ul>
+      <button class="cerrar-menu" id="cerrar"><i class="bi bi-x" style="color:#fff"></i>CERRAR</button>
+  </nav>
+  <main>
+    <section class="proyect" id="proyect">
+            
+          <div class="title-mod">
+            <p>def<span>PROJECT()</span>&nbsp;&nbsp;:</p>
+          </div>
+            <div class="inner">
+                  <div class="effect">
+                    <a href="https://github.com/lourdDuarte/Sistema-de-Gestion-Psichology" target="_blank">
+                      <div class="card">
+                        <div class="card-body">
+                          <img class="img-proyect" src="../static/img/psichology.png"  alt="ps">
+                          <h1 class="title">PSICHOLOGY</h1>
+                            <div class="div-skill">
+                              <img class="img-skill" src="../static/img/php.svg "  alt="ps">
+                              <img class="img-skill" src="../static/img/jquery.svg "  alt="ps">
+                              <img class="img-skill" src="../static/img/mysql.svg "  alt="ps">
+                              <img class="img-skill" src="../static/img/chart.svg "  alt="ps">
+                              <img class="img-skill" src="../static/img/bootstrap.svg "  alt="ps">
+                            </div>
+                        
+                        </div>
+                      </div>
+                    </a>
+                    <a href="https://github.com/lourdDuarte/program-license-Django" target="_blank">
+                      <div class="card">
+                        <div class="card-body">
+                          <img class="img-proyect" src=" ../static/img/license2.png"  alt="ps">
+                          <h1 class="title">LICENSE</h1>
+                            <div class="div-skill">
+                              <img class="img-skill" src=" ../static/img/python.svg"  alt="ps">
+                              <img class="img-skill" src=" ../static/img/django.svg"  alt="ps">
+                              <img class="img-skill" src=" ../static/img/bootstrap.svg"  alt="ps">
+                              <img class="img-skill" src=" ../static/img/css.svg"  alt="ps">
+                              <img class="img-skill" src=" ../static/img/html.svg"  alt="ps">
+                            </div>
+                        </div>  
+                      </div>
+                    </a>
+                    <a href="https://github.com/lourdDuarte/Agenda-en-Python---UTN" target="_blank">
+                      <div class="card">
+                        <div class="card-body">
+                          <img class="img-proyect" src="../static/img/agenda2.png "  alt="ps">
+                          <h1 class="title">AGENDA</h1>
+                            <div class="div-skill">
+                              <img class="img-skill" src=" ../static/img/python.svg "  alt="ps">
+                              <img class="img-skill" src=" ../static/img/mysql.svg "  alt="ps">
+                            </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="https://github.com/lourdDuarte/-challengeonecodificador5-ENCRIPTADOR-JS" target="_blank">
+                      <div class="card">
+                        <div class="card-body">
+                          <img class="img-proyect" src="../static/img/encriptador.png "  alt="ps">
+                          <h1 class="title">ENCRIPTADOR</h1>
+                            <div class="div-skill">
+                              <img class="img-skill" src="../static/img/css.svg "  alt="ps">
+                              <img class="img-skill" src="../static/img/html.svg "  alt="ps">
+                              <img class="img-skill" src="../static/img/js.svg "  alt="ps">
+                            </div>
+                        </div>
+                      </div>
+                    </a>
+                    
                   </div>
                   
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <img class="img-proyect" src=" {% static 'img/agenda2.png' %} "  alt="ps">
-                    <h1 class="title">AGENDA</h1>
-                    <img class="img-skill" src=" {% static 'img/python.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/mysql.svg' %} "  alt="ps">
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <img class="img-proyect" src=" {% static 'img/encriptador.png' %} "  alt="ps">
-                    <h1 class="title">ENCRIPTADOR</h1>
-                    <img class="img-skill" src=" {% static 'img/css.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/html.svg' %} "  alt="ps">
-                    <img class="img-skill" src=" {% static 'img/js.svg' %} "  alt="ps">
-                  </div>
-                </div>
-              </div>
-              
-                
-        
+                    
             
-         </div>
-         
- 
+                
+             </div>
+             
+     
+        
+    </section>
+    <div class="footer-hz">
+      <p class="redes">
+        const<span class="redes-color"> &nbsp;redes</span>&nbsp;  = {
+          linkedin:  <i class="fa-brands fa-linkedin"></i> ,<br><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          github: <i class="fa-brands fa-github"></i>
+        };
+      </p>  
     
-</section>
-<p class="redes">
-  const<span class="redes-color"> &nbsp;redes</span>&nbsp;  = {
-    linkedin:  <i class="fa-brands fa-linkedin"></i> ,<br><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    github: <i class="fa-brands fa-github"></i>
-  };
-</p>    
-</main>   
-<script>
-  const nav = document.querySelector("#nav");
-  const abrir = document.querySelector("#abrir");
-  const cerrar = document.querySelector("#cerrar");
+    </div>
+      
+    </main>   
+    <script>
+      const nav = document.querySelector("#nav");
+      const abrir = document.querySelector("#abrir");
+      const cerrar = document.querySelector("#cerrar");
+    
+    
+      abrir.addEventListener("click", () => {
+          nav.classList.add("visible");
+    
+      })
+    
+      cerrar.addEventListener("click", () => {
+          nav.classList.remove("visible");
+    
+    
+    })
+    
+    </script>
+    <div id='particles-js'></div> 
+    
+  
+</body>
+<script src="../static/js/scrollreveal.js"></script>
+<script src="../static/js/scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="../static/js/main.js"></script>
+<script src="../static/js/particles/particles.min.js"></script>
+<script src="../static/js/particles/app.js"></script>
 
+</html>
 
-  abrir.addEventListener("click", () => {
-      nav.classList.add("visible");
-
-  })
-
-  cerrar.addEventListener("click", () => {
-      nav.classList.remove("visible");
-
-
-})
-
-</script>
-<div id='particles-js'></div> 
-
-{% endblock %}
 

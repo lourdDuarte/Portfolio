@@ -1,93 +1,119 @@
-
-{% extends "base.html" %}
-{% load static %}
-{% block head_content %}
-<title>Skill</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
-<button id="abrir" class="abrir-menu"><i class="fa fa-list" aria-hidden="true" style="color:#fff"></i></button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous" />
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/index.css " rel="stylesheet" type="text/css">
+    <link href="../static/css/media.css " rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,600&family=Unbounded:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,600;1,800&family=Unbounded:wght@200&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
+    </head>
+<body>
+    <button id="abrir" class="abrir-menu"><i class="fa fa-list" aria-hidden="true" style="color:#fff"></i></button>
         <nav class="nav" id="nav">
             <ul class="nav-list">
-              <li><a href="{% url "index" %}"><p>01.<<span>HOME</span>></p></a></li>
-              <li><a href="{% url "proyect" %}"><p>02.<<span>PROJECT</span>></p></a></li>
+              <li><a href="index.html"><p>01.<<span>HOME</span>></p></a></li>
+              <li><a href="proyect.html"><p>02.<<span>PROJECT</span>></p></a></li>
             </ul>
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x" style="color:#fff"></i>CERRAR</button>
         </nav>
-{% endblock %}
-
-{% block container %}
-<main>
-    <section class="skills">
-        
-        <div class="title-mod">
-            <p>def<span>SKILLS()</span>&nbsp;&nbsp;:</p>
-
-        </div>
-        <div class="contenido-right">
-                <div class="inner">
-                    <div class="content-inner">
-                        <div class="inner-min">
-                            <p>backend&nbsp;&nbsp;=&nbsp;&nbsp;[</p>
-                        </div>
-                            <img src="{% static 'img/python.svg'%}" alt="python" class="class-skill">
-                            <img src="{% static 'img/php.svg'%}" alt="php" class="class-skill">
-                            <img src="{% static 'img/js.svg'%}" alt="js" class="class-skill">
-                        <p class="close">]</p>
-                            <p class="p-data">database&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
-                            <img src="{% static 'img/sql.svg'%}" alt="sql" class="class-skill">
-                            <p class="close">]</p>
-                    </div>
-
-
+        <main>
+            <section class="skills">
+                <div class="title-mod">
+                    <p>def<span>SKILLS()</span>&nbsp;&nbsp;:</p>
                 </div>
-                <div class="inner">
-                    <div class="content-inner-fr">
-                        <div class="inner-min">
-                            <p>frontend&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
-                        </div>
-                    <img src="{% static 'img/bootstrap.svg '%}" alt="bootstrap" class="class-skill">
-                    <img src="{% static 'img/html.svg '%}" alt="bootstrap" class="class-skill">
-                    <img src="{% static 'img/css.svg '%}" alt="bootstrap" class="class-skill">
-                    <p class="close">]</p>
-                    <p class="p-data">framework&nbsp;&nbsp;=&nbsp;&nbsp;[ </p>
-                    <img src="{% static 'img/django.svg'%}" alt="django" class="class-skill">
-                    <img src="{% static 'img/react.svg'%}" alt="django" class="class-skill">
-                    <p class="close">]</p>
-                </div>        
-        </div> 
-</section>
-    <div class="footer-hz">
-    <p class="redes">
-        const<span class="redes-color"> &nbsp;redes</span>&nbsp;  = {
-          linkedin:  <i class="fa-brands fa-linkedin"></i> ,<br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          github: <i class="fa-brands fa-github"></i>
-        };
-    </p> 
-    </div>
+                <!-- <div class="contenido-right"> -->
+                    
+                    <div class="inner">
+                        <div class="content-skill">
+                            
+                            <img src="../static/img/python.svg" onmouseover="cambiarTitulo('{ backend }')" onmouseout="restaurarTitulo()"alt="python" class="class-skill">
+                            <img src="../static/img/php.svg" onmouseover="cambiarTitulo('{ backend }')" onmouseout="restaurarTitulo()" alt="php" class="class-skill">
+                            <img src="../static/img/js.svg" onmouseover="cambiarTitulo('{ backend }')" onmouseout="restaurarTitulo()" alt="js" class="class-skill">
+                       
+                            
+                            <img src="../static/img/sql.svg" onmouseover="cambiarTitulo('{ database }')" onmouseout="restaurarTitulo()" alt="sql" class="class-skill">
+                       
+                   
+                            
+                            <img src="../static/img/bootstrap.svg " onmouseover="cambiarTitulo('{ frontend }')" onmouseout="restaurarTitulo()" alt="bootstrap" class="class-skill">
+                            <img src="../static/img/html.svg " onmouseover="cambiarTitulo('{ frontend }')" onmouseout="restaurarTitulo()"  alt="bootstrap" class="class-skill">
+                            <img src="../static/img/css.svg " onmouseover="cambiarTitulo('{ frontend }')" onmouseout="restaurarTitulo()" alt="bootstrap" class="class-skill">
+                           
+            
+                            <img src="../static/img/django.svg" onmouseover="cambiarTitulo('{ framework }')" onmouseout="restaurarTitulo()"  alt="django" class="class-skill">
+                     
+                            
+                        </div> 
+                        <h1 class="skill-title" id="titulo">{}</h1>        
+                    </div>
+                   
+           
+               
+            </section>
+            <div class="footer-hz">
+            <p class="redes">
+                const<span class="redes-color"> &nbsp;redes</span>&nbsp;  = {
+                  linkedin:  <i class="fa-brands fa-linkedin"></i> ,<br><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  github: <i class="fa-brands fa-github"></i>
+                };
+            </p> 
+            </div>
+        
+        </main> 
+        <div id='particles-js'></div> 
+        <script>
+          const nav = document.querySelector("#nav");
+          const abrir = document.querySelector("#abrir");
+          const cerrar = document.querySelector("#cerrar");
+        
+        
+          abrir.addEventListener("click", () => {
+              nav.classList.add("visible");
+        
+          })
+        
+          cerrar.addEventListener("click", () => {
+              nav.classList.remove("visible");
+        
+        
+        })
 
-</main> 
-<div id='particles-js'></div> 
-<script>
-  const nav = document.querySelector("#nav");
-  const abrir = document.querySelector("#abrir");
-  const cerrar = document.querySelector("#cerrar");
+        function cambiarTitulo(texto) {
+        var titulo = document.getElementById("titulo");
+        titulo.textContent = texto;
 
+        titulo.classList.remove("skill-title");
+        titulo.classList.add("skill-title-hidden");
 
-  abrir.addEventListener("click", () => {
-      nav.classList.add("visible");
+        setTimeout(function() {
+        titulo.textContent = texto;
+        titulo.classList.remove("skill-title-hidden");
+        titulo.classList.add("skill-title");
+        }, 300);
+        }
 
-  })
+        function restaurarTitulo() {
+        var titulo = document.getElementById("titulo");
+        titulo.textContent = "{}";
+       
+        }
+        
+        </script>
+    
+</body>
+<script src="../static/js/scrollreveal.js"></script>
+<script src="../static/js/scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="../static/js/main.js"></script>
+<script src="../static/js/particles/particles.min.js"></script>
+<script src="../static/js/particles/app.js"></script>
 
-  cerrar.addEventListener("click", () => {
-      nav.classList.remove("visible");
-
-
-})
-
-</script>
-
-{% endblock %}
-
-
+</html>
