@@ -19,25 +19,25 @@ particlesJS('particles-js',
         "value": 25,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 900
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#db0a0a"
       },
       "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
+      "type": "image",
+      "stroke": {
+        "width": 500,
+        "color": "#db0a0a"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "https://cdn.icon-icons.com/icons2/510/PNG/512/android-developer_icon-icons.com_50528.png",
+        "width": 400,
+        "height": 410
         }
       },
       "opacity": {
@@ -51,7 +51,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 5,
+        "value": 12,
         "random": true,
         "anim": {
           "enable": false,
@@ -63,13 +63,13 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
+        "color": "#000000",
+        "opacity": 1,
+        "width": 0.5
       },
       "move": {
         "enable": true,
-        "speed": 3,
+        "speed": 4,
         "direction": "none",
         "random": false,
         "straight": false,
