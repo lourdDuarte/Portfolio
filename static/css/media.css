@@ -1,6 +1,5 @@
-@media only screen and (max-width : 767px) {
-
-
+@media (max-width : 767px) 
+{
     .contenido{
         width:100%;
         display:flex;
@@ -15,50 +14,23 @@
         min-width:100px;
         background: transparent;
         padding:0px;
-    }
+    } */
 
    
-/* ********* INDEX ********* */
-    .div-image img{
-        width: 300px;
-        padding-top: 0px;
-        margin-top: 5em;
-        padding-left: 15px;
-    
-    }
-
+    /* ********* INDEX ********* */
     .title-typed{
-        position: absolute;
-        top: 20em;
-        left: 1em;
+        padding-top: 8em;
+    }
+    /* 
+    ********** FOOTER ******    */
+        
+    .footer-hz{
+        
+        margin-top: 45em;
     
     }
 
-    .p-type{
-        color: #fafafa;
-        font-size: 22px;
-    }
-
-    .span-type{
-        color: #00d1c7;
-        font-size: 25px;
-    
-    }
-/* 
-********** FOOTER ******    */
-    .redes{
-        color:#ffffff;
-        text-align: center;
-        margin-top: 38em;
-        font-size: 18px;
-
-    }
-
-    .redes-color{
-       font-size: 18px;
-    }
-
-/******** MENU ********/
+    /******** MENU ********/
     .abrir-menu,
     .cerrar-menu {
         display: block;
@@ -110,7 +82,7 @@
         flex-direction: column;
         align-items: end;
         font-weight: 10;
-        margin-top: 1em;
+        margin-top: 0em;
     }
 
     .nav-list li a {
@@ -130,87 +102,76 @@
 
 
     /* ********SKILLS**** */
+    
+    .skills, .proyect{
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    .proyect, .skills{
+        height: 30px;
+    }
+
     .title-mod{
-        margin-left: 1em;
-        display: flex ;
+        font-size: 15px;
+        padding-top: 0em;
+        margin-left: 0em;
+    }
+    
+    
+    
+    .title-mod p{
+        color: #07a19a;
+        font-size: 30px;
+
     }
 
     .title-mod span{
-        font-size: 30px;
-        margin-left: 10px;
-    }
-
-    .title-mod p{
-        font-size: 25px;
-        margin-right: 2em;
-    }
-
-    .skills{
-        padding-left: 0px;
-        display: block;
-        height: 30px;
-        width: 100%;
-        flex-wrap:nowrap;
-    }
-
-    .content-inner, .content-inner-fr{
-        position: absolute;
-        display: block;
-        left: 3em;
-        top: 8em;
+        font-size: 45px;
     }
     
-    .content-inner-fr{
-        top: 18em;
+    .content-skill{
+        text-align: left;
+        padding: 0px;
     }
 
-    
-    .inner-min p{
-        font-size: 25px;
-        display: block;
-
-    }
-
-    .p-data{
-        font-size: 25px;
-        margin-top: 8em;
-    }
     .class-skill{
-    width: 35px;
-    padding-right:10px;
-   
-    margin-top: -33em;
+        width: 42px;
+        padding-right:0px;
+        margin-top: 2em;
+     
+        
     }
-
+    
+    
     .class-skill:hover{
-        width: 38px;
+        width: 42px;
     }
 
-    .close{
-        margin-bottom: 2em;
-        font-size: 25px;
+    .skill-title{
+        font-size: 30px;
+        margin-top: 3em;
     }
 
-/******** PROYECT *********** */
+    
+
+    /******** PROYECT *********** */
     .proyect{
-        padding-top: 2em;
-        padding-left: 0px;
-        width:100%;
-        display:flex;
-        flex-wrap:nowrap;
+       
         height: 30px;
+       
     }
 
     .effect{
-        margin-top: 2em;
+        margin-top: -2em;
     }
 
     .card {
-        width: 24em;
-        height: 13em;
+        width: 25em;
+        height: 10em;
         font-size: 13px;
         padding-top: 5px;
-        margin-left: -22em;
+        margin-left: 2em;
         margin-bottom: 2em;
         display: block;
 
@@ -220,14 +181,14 @@
     
       .card:hover {
         box-shadow: none;
-        width: 24em;
-        height: 13em;
+        width: 25em;
+        height: 10em;
     
       }
     
       .card:hover .img-proyect{
-        width: 20em;
-        height: 8em;
+        width: 15em;
+        height: 6em;
         margin-left: 18px;
     
       }
@@ -255,81 +216,38 @@
       }
 
       .img-proyect{
-        width: 20em;
-        height: 8em;
+        width: 15em;
+        height: 6em;
         margin-bottom: 5em;
-        margin-left: 18px;
+        margin-left: 50px;
         transition: all .3s ease;
        
     
     }
 
     .img-skill{
-        width: 2em;
+        width: 1.5em;
         margin-left: 0em;
         opacity: 1;
     }
 
     .div-skill{
         position: absolute;
-        top: 12em;
+        top: 9em;
         left: 1.5em;
         height: 5em;
     }
 
     .title{
-        width:0%;
-        font-size: 15px;
-        margin-top: 10em;
+       
+        margin-top: 8em;
         opacity: 1;
         padding: 0px 0px 0px 0px;
     }
     
-  
-    
-    .footer-hz{
-        writing-mode: vertical-lr;
-        margin-left: 22em;
-        margin-top: -30em;
-      
-    }
 
     
 }
 
-@media only screen and (max-width : 1370px)  {
-    
-    .nav{
-        padding-left: 30em;
-    }
-/* ****** INDEX ****** */
 
-    .contenido{
-    width:100%;
-    display:flex;
-    flex-wrap:nowrap;
-    height: 420px;
 
-    }
-    .title-typed{
-        top: 3em;
-        left: 40em;
-    }
-    .p-type{
-        font-size: 35px;
-        margin-top: 1em;
-    }
-
-    .span-type{
-        font-size: 42px;
-      
-    }
-    .div-image img{
-        width: 400px;
-        padding-left: 15vh;
-        padding-top: 60px;
-    
-    }
-/* ****** FIN INDEX ****** */
-
-}
