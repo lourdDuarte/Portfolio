@@ -1,33 +1,286 @@
+
+@media (max-width: 1875px) and (min-width: 1360px)  
+{
+    
+    .skills, .proyect{
+        padding-top: 10px;
+        padding-left: 150px;
+        height: 450px;
+    }
+    
+    /* ****** INDEX ****** */
+
+    .contenido{
+    width:100%;
+    display:flex;
+    flex-wrap:nowrap;
+    height: 420px;
+
+    }
+    .title-typed{
+        text-align: center;
+        margin-top: 1em;
+    
+    }
+    .p-type{
+        font-size: 35px;
+    }
+
+    .span-type{
+        font-size: 42px;
+      
+    }
+    /* ****** FIN INDEX ****** */
+
+
+    /******* SKILLS ***********/
+    .title-mod{
+        margin-top: 1em;
+        margin-left: 0em;
+        font-family: 'Cousine', monospace;
+    }
+
+
+
+    .title-mod p{
+        color: #07a19a;
+        font-size: 40px;
+
+    }
+
+    .title-mod span{
+        color: #000000;
+        font-size: 50px;
+        margin-left: 0px;
+    }
+
+    .content-skill{
+    
+        padding: 0px;
+    }
+    .class-skill{
+        width: 65px;
+        padding-right:30px;
+        
+    }
+
+
+    .class-skill:hover{
+        width: 75px;
+    }
+
+    .skill-title{
+        font-size: 30px;
+        transition: opacity 0.3s ease-in-out;
+        padding: 0px;
+        margin-top: 2em;
+        opacity: 1;
+    
+    }
+
+    /************* END SKILLS *********/
+
+    /*********** PROYECT ***********/
+
+    .card {
+        width: 20em;
+        height: 10em;
+        margin: 0.1em 0.5em;
+
+    }
+
+
+
+    .card:hover {
+        box-shadow: 0 3px 5px 0 #00d1c7;
+        width: 20em;
+        height: 10em;
+
+    }
+
+    
+
+    .card-body{
+        width: 20em;
+        height: 10em;
+        margin: 0 auto;
+
+    }
+
+    .card:hover .img-proyect{
+        width: 15em;
+        margin-left: 30px;
+
+    }
+
+    .img-proyect{
+        width: 15em;
+        margin-bottom: 2em;
+        margin-left: 30px;
+        transition: all .3s ease;
+    }
+
+    .img-skill{
+        width: 2em;
+        margin-left: 0.5em;
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 1360px){
+
+    .footer-hz,  .nav{
+        margin-left: 5em;
+    }
+
+    .title-mod{
+        margin-top: 0em;
+        margin-left: -3em;
+       
+    }
+
+    .title-mod p{
+        color: #07a19a;
+        font-size: 35px;
+
+    }
+
+    .title-mod span{
+        color: #000000;
+        font-size: 45px;
+
+    }
+
+
+    /********** PROYECT *********/
+    .proyect, .skills{
+        height: 620px;
+        margin-top: -2em;
+        margin-left: -3em;
+    }
+    .card {
+        width: 25em;
+        height: 13em;
+        margin: -2em 2em 6em;
+        padding-right: 0.5em;
+        
+
+    }
+
+    .card:hover {
+        width: 25em;
+        height: 13em;
+
+    }
+    .card:hover .img-proyect{
+        width: 23em;
+        margin-left: 18px;
+
+    }
+
+    .img-proyect{
+        width: 23em;
+        margin-bottom: 0em;
+        margin-top: -1.5em;
+    }
+
+    .img-skill{
+        width: 2em;
+        margin-left: 1em;
+        margin-top: 0.5em;
+       
+    }
+
+    .title{
+        margin-left: -0.5em;
+    }
+
+    .div-skill{
+        margin-left: 0.5em;
+    }
+
+    /******* END PROYECT ********/
+
+    /******* SKILLS *************/
+    .class-skill{
+        margin-top: 2em;
+    }
+
+}
+
+@media (max-width: 1023px){
+
+     /********** PROYECT *********/
+     .proyect, .skills{
+        margin-left: -6em;
+        
+    }
+
+    .effect, .content-skill{
+        margin-left: -8em;
+    }
+   
+    .skill-title{
+        margin-left: 5em;
+    }
+   
+    .img-proyect{
+        width: 20em;
+        margin-bottom: 0em;
+        margin-top: -1.5em;
+    }
+
+}
+
+@media (max-width: 1023px){
+    .skill-title{
+        font-size: 45px;
+        margin-left: 4em;
+    }
+
+}
+
+@media (max-width: 847px){
+    .proyect, .skills{
+        margin-left: -9em;
+    }
+    
+    .effect, .content-skill{
+        margin-left: -8.9em;
+    }
+   
+    .card {
+        width: 23em;
+
+    }
+
+}
+
 @media (max-width : 767px) 
 {
-    .contenido{
-        width:100%;
-        display:flex;
-        flex-wrap:nowrap;
-        height: 30px;
-    
-    }
-
-    .inner{
-        margin:4px;
-        flex:1;
-        min-width:100px;
-        background: transparent;
-        padding:0px;
-    } */
-
-   
-    /* ********* INDEX ********* */
-    .title-typed{
-        padding-top: 8em;
-    }
-    /* 
-    ********** FOOTER ******    */
-        
     .footer-hz{
-        
-        margin-top: 45em;
-    
+        margin-top: 30em;
+        margin-left: 1em;
+    }
+
+    .contenido{
+        height: 450px;
+    }
+
+    .skills{
+        height: 450px;
+        margin-top: 2em;
+    }
+    .proyect{
+        margin-top: 2em;
+    }
+    .skill-title{
+        margin-left: -1em;
+        font-size: 30px;
+    }
+
+    .content-skill{
+        margin-top: -4em;
     }
 
     /******** MENU ********/
@@ -101,153 +354,7 @@
     }
 
 
-    /* ********SKILLS**** */
-    
-    .skills, .proyect{
-        padding-top: 15px;
-        padding-left: 20px;
-    }
-
-    .proyect, .skills{
-        height: 30px;
-    }
-
-    .title-mod{
-        font-size: 15px;
-        padding-top: 0em;
-        margin-left: 0em;
-    }
-    
-    
-    
-    .title-mod p{
-        color: #07a19a;
-        font-size: 30px;
-
-    }
-
-    .title-mod span{
-        font-size: 45px;
-    }
-    
-    .content-skill{
-        text-align: left;
-        padding: 0px;
-    }
-
-    .class-skill{
-        width: 42px;
-        padding-right:0px;
-        margin-top: 2em;
-     
-        
-    }
-    
-    
-    .class-skill:hover{
-        width: 42px;
-    }
-
-    .skill-title{
-        font-size: 30px;
-        margin-top: 3em;
-    }
-
-    
-
-    /******** PROYECT *********** */
-    .proyect{
-       
-        height: 30px;
-       
-    }
-
-    .effect{
-        margin-top: -2em;
-    }
-
-    .card {
-        width: 25em;
-        height: 10em;
-        font-size: 13px;
-        padding-top: 5px;
-        margin-left: 2em;
-        margin-bottom: 2em;
-        display: block;
-
-    
-      }
-     
-    
-      .card:hover {
-        box-shadow: none;
-        width: 25em;
-        height: 10em;
-    
-      }
-    
-      .card:hover .img-proyect{
-        width: 15em;
-        height: 6em;
-        margin-left: 18px;
-    
-      }
-    
-      .card:hover .title{
-        width:0%;
-        font-size: 15px;
-        margin-top: 10em;
-        margin-left: 0px;
-        padding: 0px 0px 0px 0px;
-      }
-    
-
-      .card:hover .img-skill{
-        opacity: 1;
-    
-      } 
-    
-    
-      .card-body{
-        width: 23em;
-        height: 14em;
-        margin: 0 auto;
-    
-      }
-
-      .img-proyect{
-        width: 15em;
-        height: 6em;
-        margin-bottom: 5em;
-        margin-left: 50px;
-        transition: all .3s ease;
-       
-    
-    }
-
-    .img-skill{
-        width: 1.5em;
-        margin-left: 0em;
-        opacity: 1;
-    }
-
-    .div-skill{
-        position: absolute;
-        top: 9em;
-        left: 1.5em;
-        height: 5em;
-    }
-
-    .title{
-       
-        margin-top: 8em;
-        opacity: 1;
-        padding: 0px 0px 0px 0px;
-    }
-    
+ 
 
     
 }
-
-
-
