@@ -16,26 +16,26 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 25,
+        "value": 40,
         "density": {
           "enable": true,
-          "value_area": 900
+          "value_area": 600
         }
       },
       "color": {
-        "value": "#db0a0a"
+        "value": "#ffffff"
       },
       "shape": {
       "type": "image",
       "stroke": {
         "width": 500,
-        "color": "#db0a0a"
+        "color": "#ffffff"
       },
       "polygon": {
         "nb_sides": 5
       },
       "image": {
-        "src": "https://cdn.icon-icons.com/icons2/510/PNG/512/android-developer_icon-icons.com_50528.png",
+        "src": "static/js/particles/img/code.png",
         "width": 400,
         "height": 410
         }
@@ -51,7 +51,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 12,
+        "value": 20,
         "random": true,
         "anim": {
           "enable": false,
@@ -65,14 +65,14 @@ particlesJS('particles-js',
         "distance": 150,
         "color": "#000000",
         "opacity": 1,
-        "width": 0.5
+        "width": 0.2
       },
       "move": {
         "enable": true,
-        "speed": 4,
-        "direction": "none",
+        "speed": 3,
+        "direction": "bottom",
         "random": false,
-        "straight": false,
+        "straight": true,
         "out_mode": "out",
         "attract": {
           "enable": false,

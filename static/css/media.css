@@ -49,7 +49,7 @@
     }
 
     .title-mod span{
-        color: #000000;
+        color: #ffffff;
         font-size: 50px;
         margin-left: 0px;
     }
@@ -146,7 +146,7 @@
     }
 
     .title-mod span{
-        color: #000000;
+        color: #ffffff;
         font-size: 45px;
 
     }
@@ -258,6 +258,14 @@
 
 @media (max-width : 767px) 
 {
+
+    .p-type{
+        font-size: 30px;
+    }
+
+    .span-type{
+        font-size: 35px;
+    }
     .footer-hz{
         margin-top: 30em;
         margin-left: 1em;
@@ -283,6 +291,14 @@
         margin-top: -4em;
     }
 
+    .class-skill{
+        width: 72px;
+    }
+
+    .class-skill{
+        width: 85px;
+    }
+
     /******** MENU ********/
     .abrir-menu,
     .cerrar-menu {
@@ -294,7 +310,7 @@
     }
 
     .abrir-menu {
-        color: #1c1c1c;
+        color: #ffffff;
         margin-top: 1em;
         margin-left: 16em;
         

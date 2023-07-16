@@ -16,13 +16,13 @@
 
 
 .title-mod p{
-    color: #07a19a;
+    color: #18e2d8;
     font-size: 50px;
     font-family: 'Cousine', monospace;
 }
 
 .title-mod span{
-    color: #000000;
+    color: #ffffff;
     font-size: 60px;
     margin-left: 10px;
 }
@@ -40,13 +40,13 @@
 
 
 .p-type{
-    color: #000000;
+    color: #ffffff;
     font-size: 45px;
     margin-top: 2em;
 }
 
 .span-type{
-    color: #07a19a;
+    color: #18e2d8;
     font-size: 55px;
   
 }
@@ -80,19 +80,19 @@
 }
 
 .p-const{
-    color:#000000;
+    color:#ffffff;
     text-align: center;
     font-size: 25px;
 
 }
 
 .span-redes{
-    color:#07a19a;
+    color:#18e2d8;
 }
 
 .redes{
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     margin-left: 15em;
@@ -196,7 +196,7 @@ body{
 }
 
 .title{
-    color: #000;
+    color: #ffffff;
     width: 20%;
     font-size: 15px;
     position: absolute;
@@ -441,6 +441,8 @@ h1{
 .content-skill{
     text-align: center;
     padding: 30px;
+    background-color: rgba(44, 43, 43, 0.15);
+    backdrop-filter: blur(6px);
 }
 
 .class-skill{
@@ -456,7 +458,7 @@ h1{
 }
 
 .skill-title{
-    color: #000;
+    color: #ffffff;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(167, 236, 231, 0.15);
@@ -539,7 +541,7 @@ p{
 
 .nav-list span {
   padding: .5em .8em;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   position: relative;
   text-decoration: none;
   font-size: 20px;
@@ -551,7 +553,7 @@ p{
 }
 
 .nav-list p{
-    color:#07a19a;
+    color:#18e2d8;
 
 }
 
@@ -610,6 +612,3 @@ form{
 .img-min{
   width: 40px;
 }
-
-
-
