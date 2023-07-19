@@ -24,6 +24,12 @@ window.sr = ScrollReveal();
         distance:'400px',
     });
 
+    sr.reveal('.nav',{
+        duration: 2000,
+        origin: 'top',
+        distance:'100px',
+    });
+
     sr.reveal('.redes',{
         duration: 2000,
         origin: 'bottom',
@@ -40,7 +46,14 @@ window.sr = ScrollReveal();
 
     sr.reveal('.effect',{
         duration: 2000,
-        origin: 'top',
+        origin: 'left',
+        distance:'400px',
+
+    });
+
+    sr.reveal('.content-skill',{
+        duration: 2000,
+        origin: 'left',
         distance:'400px',
 
     });
