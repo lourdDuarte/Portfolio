@@ -58,23 +58,4 @@ window.sr = ScrollReveal();
         distance:'400px',
 
     });
-
-        origin: 'left',
-        distance:'400px',
-
-    });
-
-    sr.reveal('.content-skill',{
-        duration: 2000,
-        origin: 'left',
-        distance:'400px',
-
-    });
-    sr.reveal('.content-skill-progress',{
-        duration: 2000,
-        origin: 'left',
-        distance:'400px',
-
-    });
-
    
