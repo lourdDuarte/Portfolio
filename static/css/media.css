@@ -78,7 +78,7 @@
     
     }
     .content-skill-progress{
-        margin-left: -7em;
+        margin-left: -0.1em;
         margin-top: 1em;
         padding-left: 35em;
         padding-bottom: 10px;      
@@ -270,13 +270,12 @@
         margin-top: -1.5em;
     }
 
-    .content-skill-progress{
-        
+   .content-skill-progress{
+        margin-left: -8em;
         padding-left: 2em;
           
     }
     
-
 
 
 
