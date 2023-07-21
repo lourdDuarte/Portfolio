@@ -445,6 +445,24 @@ h1{
     backdrop-filter: blur(6px);
 }
 
+.content-skill-progress{
+    padding: 0px;
+    text-align: left;
+    margin-top: 3em;
+    padding-left: 22em;
+    background-color: rgba(44, 43, 43, 0.15);
+    backdrop-filter: blur(6px);
+}
+
+.progress{
+    padding: 0px;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+
+
 .class-skill{
     width: 95px;
     padding-right:40px;
