@@ -1,6 +1,6 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'<p class="p-type"> { Hi! i&apos;m Lourdes,</p><span class ="span-type"> Welcome to my portfolio } </span><br><a href="https://drive.google.com/file/d/1-zRox4P3s-0XzBglpJ_Dh1XP2bH6SK2a/view?usp=sharing" target="_blank"><button class="btn-type">VIEW CV</button></a><br>'	
+		'<p class="p-type"> { Hi! i&apos;m Lourdes,</p><span class ="span-type"> Welcome to my portfolio } </span><br><a href="https://drive.google.com/file/d/14jrhQb783sKZWYcDdEmMq6BxJk-mC84G/view?usp=drive_link" target="_blank"><button class="btn-type">VIEW CV</button></a><br>'	
 	],
 
 	typeSpeed: 100, // Velocidad en mlisegundos para poner una letra,
